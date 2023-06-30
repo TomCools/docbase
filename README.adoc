@@ -5,3 +5,8 @@ Resulting files are in the /target folder.
 
 Publish the documentation to confluence: Run `mvn asciidoc-confluence-publisher:publish`
 Do check the setting in the POM.xml :-)
+
+### Recommendation
+
+If you want to document in the Arc42 style, there is a repository which already contains the structure.
+You can copy that into your own repository: https://github.com/arc42/arc42-template
