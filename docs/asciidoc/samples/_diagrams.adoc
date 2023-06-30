@@ -1,0 +1,31 @@
+Ditaa
+
+[ditaa,asciidoctor-diagram-process]
+....
+                   +-------------+
+                   | Asciidoctor |-------+
+                   |   diagram   |       |
+                   +-------------+       | PNG out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /---------------\
+ |        |---+ Asciidoctor +--->|               |
+ |  Text  |   +-------------+    |   Beautiful   |
+ |Document|   |   !magic!   |    |    Output     |
+ |     {d}|   |             |    |               |
+ +---+----+   +-------------+    \---------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+
+....
+
+PlantUML
+[plantuml,auth-protocol]
+....
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+....

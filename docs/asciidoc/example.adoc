@@ -1,0 +1,17 @@
+= Super Awesome Documentation
+:example-caption!:
+
+Example page!
+
+Example PlantUML diagram
+
+PlantUML
+[plantuml,auth-protocol]
+....
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+....
+
