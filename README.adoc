@@ -1,21 +1,7 @@
 ## Asciidoc Example
 
-Generating the documentation.
-
-Run `mvn process-resources`
+Generating the documentation PDF: Run `mvn process-resources`
 Resulting files are in the /target folder.
 
-### Using Docker
-
-In a Windows-shell:
-- `docker run -it --rm -v "%cd%"/:/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn process-resources`
-
-In a bash-shell:
-- `docker run -P -v $(pwd)/:/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn process-resources`
-
-In a https://fish.sh[fish-shell^]:
-- `docker run -P -v (pwd)/:/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn process-resources`
-
-### Testing Confluence Poster
-
-https://hub.docker.com/r/atlassian/confluence-server/
+Publish the documentation to confluence: Run `mvn asciidoc-confluence-publisher:publish`
+Do check the setting in the POM.xml :-)
